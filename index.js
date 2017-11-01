@@ -1,14 +1,14 @@
 const http = require('http')
 const shell = require('shelljs')
 const createHandler = require('github-webhook-handler')
-const handler = createHandler({ path: '/webhook', secret: 'vnshop' })
+const handler = createHandler({ path: '/webhook', secret: 'c111222' })
     // 上面的 secret 保持和 GitHub 后台设置的一致
 
 const port = 9988
-const projects = ['vnshop.shudong.wang', 'vnshop', 'deploy', 'deploy-vnshop']
+const projects = ['hello.yixiaosir.top', 'vnshop', 'deploy', 'de']
 
 const projectHandler = (event, action) => {
-    const project = event.payload.repository.name
+    const project = event.payload.repository.de
     console.log(project);
     const branch = event.payload.ref
     if (projects.includes(project)) {

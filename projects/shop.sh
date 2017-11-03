@@ -5,7 +5,7 @@ WEB_PATH_CLIENT='/home/wwwroot/vnshop/client'
 WEB_USER='www'
 WEB_USERGROUP='www'
  
-echo "Start deployment hello.yixiaosir.top"
+echo "Start deployment cyx.saigsf.com"
 cd $WEB_PATH
 echo "pulling source code..."
 # git reset --hard origin/release
